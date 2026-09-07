@@ -1,0 +1,2 @@
+filesystemError is been logged
+ArithmeticError is been logged
