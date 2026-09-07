@@ -1,0 +1,60 @@
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+
+.container{
+    width: 500px;
+    margin: 100px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translate(50px,50px);
+    
+}
+
+.img-container{
+    width: 100%;
+    /* overflow: hidden; */
+    /* position: relative; */
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.img-container:hover{
+    transform: rotate(-3deg);
+    border-radius: 20px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 50px;
+    margin-left: 20px;
+    animation-name: movebox;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    /* animation-timing-function: ease-in-out; */
+    /* overflow: hidden;
+    align-items: center; */
+
+}
+
+@keyframes movebox {
+    from{}
+    to{
+        /* margin-left:100%; */
+        background-color: blue;
+        transform: rotate(360deg);
+        margin-left:calc(100% - 100px);
+        border-radius: 50%;
+    }
+}
+

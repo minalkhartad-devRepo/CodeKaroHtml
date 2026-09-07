@@ -1,0 +1,20 @@
+
+h1 {
+    color : green;
+}
+
+div {
+    border : 2px solid green;
+    width : 500px;
+    margin : auto;
+    /* text-align : justify; */
+    padding : 10px;
+    border-radius : 30px;
+}
+
+img {
+    width : 100%;
+    border-radius : 30px;
+    height : 300px;
+    /* font-family: ; */
+}

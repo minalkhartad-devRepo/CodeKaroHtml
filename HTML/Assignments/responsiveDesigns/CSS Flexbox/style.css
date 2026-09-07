@@ -1,0 +1,334 @@
+
+body{
+    margin:0 250px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.container{
+   margin: auto;
+    width: 70%;
+    padding: 20px;
+    color: white;
+    /* justify-content: center; */
+    /* display: flex; */
+}
+
+.pageintro{
+    display: flex;
+    gap: 20px;
+    width: 900px;
+}
+
+.pageicon{
+    border-radius: 80px;
+    /* border: 7px solid rgba(160, 52, 52, 0.616); */
+    width: 165px;
+    height: 165px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    object-fit: cover;
+    top:30px;
+    border: 5px solid rgb(91, 11, 59);
+}
+
+
+.pageicon img{
+  width: 100%;
+  height: 100%;
+}
+
+.pageheading-1{
+    padding: 10px 0;
+    align-items: center;
+}
+
+.pageheading-1-part1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.pageheading-1-part1 > div:first-child {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.pageheading-1-part2{
+    padding: 10px 0;
+}
+
+.pageheading-1-part3{
+    display: flex;
+    gap: 2px;
+}
+
+.numbers{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.numberstext{
+    font-weight: 200;
+    /* font-size: 15px; */
+}
+
+.pageheading-1-part3-content{
+    padding-right: 10px;
+}
+
+.pageheading-2{
+    margin: 10px 0;
+}
+
+.pageheading-2-part1{
+    display: flex;
+    gap: 2px;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgba(211, 211, 211, 0.997);
+}
+.pageheading-2-part2{
+    display: flex;
+    gap: 2px;
+    font-weight: 100;
+    padding-top: 5px;
+}
+
+.pageheading-2-part3{
+    display: flex;
+    gap: 18px;
+    padding-top: 5px;
+}
+
+.pageheading-2-part3-content1{
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageheading-2-part3-content1 a{
+    text-decoration: none;
+    color: rgba(69, 107, 221, 0.781);
+}
+
+.pageheading-2-part3-content1 svg{
+    text-decoration: none;
+    color: rgba(69, 107, 221, 0.781);
+}
+
+.pageheading-2-part3-content2{
+    font-weight: 100;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageheading-2-part3-content2 span{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.pageheading-3{
+    display: flex;
+    gap: 2px;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.followedPersonicondiv{
+    display: flex;
+    gap: 2px;
+    padding-right: 10px;
+}
+
+.followedPersonicon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    gap: 2px;
+}
+
+.pageintobtn{
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageintobtn-1{
+    width: 35%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    background-color: rgba(74, 115, 239, 0.781);
+    border: none;
+}
+
+
+.pageintobtn-1:hover{
+    background-color: rgba(53, 100, 240, 0.945);
+}
+
+.pageintobtn-2{
+    width: 35%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    background-color: rgba(94, 92, 92, 0.596);
+    border: none;
+}
+
+.pageintobtn-2:hover{
+    background-color: rgba(140, 136, 136, 0.596);
+}
+
+.pageintobtn-3{
+    width: 10%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    background-color: rgba(61, 59, 59, 0.596);
+    border: none;
+}
+
+.pageintohighlights{
+    width: 900px;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    gap: 20px;
+}
+
+.pageintohighlightsicon{
+    border-radius: 12px;
+    width: 96px;
+    height: 96px;;
+    overflow: hidden;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.pageintohighlightsicon img{
+  width: 100%;
+  height: 100%;
+  border-radius: 90px;
+  object-fit: cover;
+  display: block;
+}
+
+.pageintohighlightstext{
+    color: #fff;          /* visible on dark background */
+    /* font-weight: 600; */
+    font-size: 10px;
+    line-height: 1;
+    white-space: nowrap;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.pageIcons{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.pageIcons svg{
+    color: rgba(163, 157, 157, 0.781);
+    font-size: 20px;
+}
+
+.instamediagrid{
+
+
+}
+
+.instamediagrid-row{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.instamediagrid-row-card{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(61, 59, 59, 0.596);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.instamediagrid-row-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+
+}
+
+.tint{
+    top:0;
+    right: 0;
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.tint svg{
+    color: white;
+}
+
+.tintlikes{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(0,0,0,0.45);  /* optional dim */
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+    inset: 0;          /* new */
+    opacity: 0;
+    transition: .3s;
+}
+
+.tintlikes-part1{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.tintlikes-part2{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.instamediagrid-row-card:hover .tintlikes{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+

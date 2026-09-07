@@ -1,0 +1,341 @@
+body{
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+}
+
+.firstPage{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    transform: scale(1);
+
+    /* position: relative;
+    background: #000; */
+}
+
+.tint{
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    /* background-color: rgba(88, 90, 91, 0.466); */
+    /* background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%); */
+   
+    background-color: rgba(0, 0, 0, 0.521);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+
+    /* background: #010f0f; */
+    /* background: linear-gradient(0deg, rgba(1, 15, 15, 1) 0%, rgba(128, 125, 117, 1) 100%); */
+
+    /* background-image: linear-gradient(0deg, rgba(1, 15, 15, 1) 0%, rgba(128, 125, 117, 1) 100%); */
+}
+
+.firstPage-nav{
+    position: absolute;
+    top:0;
+    align-items: center;
+    display: flex;
+    width: 990px;
+    justify-content: space-between;
+    margin-top: 10px;
+    top:5%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.netflix-logo{
+    color: red;
+    height: 100px;
+    width: 100px;
+    margin-top: 100px;
+}
+.nav-btn{
+    display: flex;
+    gap:20px;
+}
+.nav-engbtn{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: transparent;
+    color:white
+
+}
+.nav-signin{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 15px;
+    background-color: red;
+    color:white;
+}
+
+.firstPage-mainContent{
+
+   position: absolute;
+   text-align: center;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   width:50%;
+   padding: 10px;
+   flex-shrink: 0;
+   
+}
+
+.mainContent-1{
+    color:white;
+    font-size: 50px;
+    /* width: 10px; */
+}
+
+.mainContent-2{
+    color:white;
+}
+
+.mainContent-3{
+    color:white;
+    margin-top: 40px;
+}
+
+.maincontent-4{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+
+.email{
+    padding: 10px;
+    width: 380px;
+    background-color: rgba(26, 12, 12, 0.515);
+    color: grey;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 20px;
+   
+}
+.btn-getstarted{
+    padding: 10px;
+    /* width: 380px; */
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    gap:2px;
+}
+
+.secondPage{
+
+    color:white;
+    display: flex;
+    width:1250px;
+    padding: 10px;
+    align-items: center;
+    margin: 100px auto;
+    gap: 20px;
+
+    /* color: white;
+        display: flex;
+        width: 990px;
+        margin: 100px auto;
+        gap: 80px;
+        align-items: center; */
+}
+
+.left{
+    width: 50%;
+}
+
+.heading{
+ font-size: 40px;
+}
+.sub-heading{
+    text-align: justify;
+    /* white-space: nowrap; */
+    font-size: 20px;
+}
+
+.right{
+    width: 50%;
+}
+.real-tv{
+    /* width: 400px; */
+    display: block;
+    position: relative;
+}
+.video{
+    /* margin-left: 86px;
+    margin-top: 36px; */
+    width: 100%;
+    /* object-fit: contain;
+    position: absolute; */
+}
+
+.thirdPage{
+    /* display: flex; */
+    width:1250px;
+    padding: 10px;
+    align-items: center;
+    margin: 100px auto;
+    gap: 20px;
+}
+
+.thirdPage-heading{
+    color:white;
+}
+
+.thirdPage-content{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;   
+}
+.thirdPage-content::-webkit-scrollbar{
+    display: none;
+}
+.thirdPage-content-card{
+    overflow: hidden;
+    height: 250px;
+    width: 180px;
+    /* background-color: lightcoral; */
+    /* border: 1px soli; */
+    border-radius: 20px;
+    display: flex;
+    flex-shrink: 0;
+    padding: 8px 22px;
+    object-fit: cover;
+    box-sizing: border-box;
+    position: relative
+} 
+
+
+.thirdPage-content-img{
+    height: 280px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;    
+}
+
+.thirdPage-content-tint{    
+    position: absolute;
+    font-size: 100px;
+    font-weight: 900;
+    border-radius: 10px;
+    top:200px;
+    left:23px;
+    transform: translate(-50%, -50%);
+    /* color: #bd0909ed; */
+    color: rgb(15, 14, 14);
+
+    z-index: 1;
+    padding-left: 18px;
+    overflow: hidden;
+    line-height: 1;
+
+   -webkit-text-stroke: 0.04rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+
+}
+
+.fourthpage{
+    width:1250px;
+    padding: 10px;
+    align-items: center;
+    margin: 100px auto;
+    gap: 20px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.fourthpage-heading{
+    color:white;
+
+}
+
+.fourthpage-content{
+    display: flex;
+    padding: 20px;
+    gap:20px;
+    width: 100%;
+
+        
+}
+
+.fourthpage-content-card{
+    color:white;
+    flex-shrink: 0;
+    width: 180px;
+    height: 250px;
+    flex: 1 0 0;
+    padding: 10px;
+        /* background-image: linear-gradient(to top, rgba(117, 32, 151, 0.8) 0, rgba(35, 23, 79, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
+    /* background-color: rgba(76, 3, 92, 0.629); */
+
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 20px;   
+    position: relative;
+
+}
+
+.fourthpage-content-card p{
+    font-size:15px;
+    text-align: start;
+}
+
+.icons{
+    bottom: 10px;
+    right: 10px;
+    /* transform: translate(-50%, -50%); */
+    position: absolute;
+}
+
+.fifthpage{
+    width:1250px;
+    padding: 10px;
+    align-items: center;
+    margin: 100px auto;
+    gap: 20px;
+    box-sizing: border-box;
+    object-fit: cover;
+    
+}
+
+.fifthpage-heading{
+    color:white;
+}
+
+.fifthpage-content{
+    color:white;
+    display: flex;
+    background-color: rgba(102, 100, 100, 0.536);
+    padding: 18px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.fifthpage-content:hover{
+    background-color: rgba(102, 100, 100, 0.836);
+}
+
+.fifthpage-title{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.fifthpage-content-container{
+    display: flex;
+    gap: 10px;
+    flex-direction: column
+
+}
+
+
+

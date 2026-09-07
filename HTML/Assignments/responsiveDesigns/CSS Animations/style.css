@@ -1,0 +1,201 @@
+
+
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 1px solid black;
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 50px;
+    position: relative;
+}
+
+.ball{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;left: 50%;
+    left: 50%;
+    top: 0;
+    transform: translate(50%);
+    position: absolute;
+
+
+    animation-name: dancingball;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+   
+    
+}
+
+@keyframes dancingball{
+    from {}
+
+    to {
+        top: calc(100% - 50px);
+        background-color: rgb(255, 0, 170);      
+
+    }
+}
+
+.container2{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loader{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.234);
+    /* border-top: 2px solid grey; */
+    /* margin: auto;  */
+
+    animation-name: loader;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes loader {
+    /* from{}
+    to{
+        transform: rotate(360deg);
+    } */
+
+    0%{}
+    25%{
+        border-top: 2px dotted rgb(72, 216, 32);
+        transform: rotate(90deg);
+
+    }
+    50%{
+        border-top: 2px dotted rgb(60, 21, 217);
+        transform: rotate(180deg);
+
+    }
+    75%{
+        border-top: 2px dotted rgb(193, 18, 27);
+        transform: rotate(270deg);
+
+    }
+    100%{
+        border-top: 2px dotted rgb(184, 14, 113);
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.cards{ 
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    overflow-x: auto;
+}
+
+
+.cards::-webkit-scrollbar{
+    display: none;
+}
+.childcards{
+    height: 280px;
+    width: 250px;
+    background-color: lightcoral;
+    border: 1px solid gray;
+    border-radius: 20px;
+    flex-shrink: 0;
+    overflow: hidden;
+
+
+    animation-name: childcards;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: normal; */
+}
+
+@keyframes childcards {
+    /* from{}
+
+    to{
+        transform:translate(-50%);
+    } */
+
+    0%{}
+    100%{
+        transform: translate(-100%);
+    }
+}
+
+.childcards img{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.btn{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(162, 145, 194, 0.882);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 50px;
+    border: none;
+    color: white;
+    font-weight: bold;
+
+    /* animation-name: btn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; */
+}
+
+/* @keyframes btn {
+    from{
+    }
+    to{
+        background-color: rgba(193, 14, 86, 0.568);
+        border-radius: 40px;
+    }
+} */
+
+.btn:hover {
+    transform: translateY(-5px) scale(1);
+    background-color: rgba(189, 38, 98, 0.8);
+    border-radius: 40px;
+    box-shadow: 0 5px 10px rgba(189, 38, 98, 0.8);
+  /* filter: drop-shadow(); */
+}
