@@ -17,7 +17,7 @@ const myServer =  http.createServer((req, res)=>{
     // const serverStartTime = Date.now();
     // const ipAddress = req.socket.remoteAddress;
 
-    let logToBeAdded = `Server request received from '${req.url}' at '${Date.now()}'\n`;
+    let logToBeAdded = `Server request received from '${req.url}' at '${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}'\n`;
     fs.appendFile('server.log', logToBeAdded, (error) => {
 
         if(error) console.log("Error occurred ")
