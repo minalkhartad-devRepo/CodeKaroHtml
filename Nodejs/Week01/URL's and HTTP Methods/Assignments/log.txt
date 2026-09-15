@@ -1,0 +1,18 @@
+
+Server request received from '/' at '15/9/2026 - 2:25:28 pm' 
+Server request received from '/search?name=John&age=25' at '15/9/2026 - 2:25:41 pm' with search parameter name : John and age : 25
+Server request received from '/home' at '15/9/2026 - 2:25:57 pm' 
+Server request received from '/home/profile' at '15/9/2026 - 2:26:11 pm' 
+Server request received from '/profile' at '15/9/2026 - 2:26:15 pm' 
+Server request received from '/search' at '15/9/2026 - 2:26:28 pm' with search parameter name : undefined and age : undefined
+Server request received from '/search?name=John&age=25' at '15/9/2026 - 2:31:16 pm' with search parameter name : John and age : 25
+Server request received from '/search?name=John&age=25' at '15/9/2026 - 2:31:49 pm' with search parameter name : John and age : 25
+Server request received from '/search?name=John&age=25' at '15/9/2026 - 2:32:26 pm' with search parameter name : John and age : 25
+Server request received from '/search?name=John&age=25' at '15/9/2026 - 2:33:26 pm' with search parameter name : John and age : 25
+Server request received from '/search?name=John&age=25' at '15/9/2026 - 2:34:01 pm' with search parameter name : John and age : 25
+Server request received from '/search?name=John&age=25' at '15/9/2026 - 2:35:30 pm' with search parameter name : John and age : 25
+Server request received from '/search?name=mk&age=24' at '15/9/2026 - 2:36:19 pm' with search parameter name : mk and age : 24
+Server request received from '/' at '15/9/2026 - 2:40:32 pm' 
+Server request received from '/found' at '15/9/2026 - 2:40:41 pm' 
+Server request received from '/helllo+page' at '15/9/2026 - 2:40:55 pm' 
+Server request received from '/search?name=John+nicola&age=25' at '15/9/2026 - 2:41:16 pm' with search parameter name : John nicola and age : 25
