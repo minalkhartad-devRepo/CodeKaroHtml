@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <div class="mt-32 w-[400px] mx-auto text-center rounded-lg  p-8 bg-gray-200 shadow-lg shadow-gray-500/50 ">
+        <h1 class="text-2xl text-cente font-black font-normal ">Entered personal details</h1>
+        <form class="text-left my-5">
+
+            <div class="flex gap-3 items-center">
+                <label for="fname" class="flex  w-20 font-black font-light">Name : </label> 
+                <span class=" flex tems-center text-black">
+                    <%= formData.fname %>
+                </span>
+
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <label for="email" class="flex  w-20 font-black font-light">Email : </label>
+                <span class=" flex tems-center text-black">
+                    <%= formData.email %>
+                </span>
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <label for="age" class="flex  w-20 font-black font-light">Age : </label>
+                <span class=" flex tems-center text-black">
+                    <%= formData.age %>
+                </span>
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <label for="favColor" class="flex  w-20 font-black font-light">Email : </label>
+                <span class=" flex tems-center text-black">
+                    <%= formData.favColor %>
+                </span>
+            </div>
+
+            <a href="/form" class="mt-5 block text-blue-600 underline">
+                Back to Home Page
+            </a>        
+        </form>
+    </div>        
+</body>
+</html>

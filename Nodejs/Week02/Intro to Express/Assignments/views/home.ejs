@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <div class="mt-32 w-[400px] mx-auto text-center rounded-lg  p-8 bg-gray-200 shadow-lg shadow-gray-500/50 ">
+        <h1 class="text-2xl text-cente font-black font-normal ">Enter your personal details</h1>
+        <form action="/submit" method="post" class="text-left">
+
+            <div class="flex gap-3 items-center">
+                <label for="fname" class="flex  w-20 font-black font-light">Name : </label>
+                <input name="fname" type="text" class="border rounded-lg p-3 mt-3 text-black w-full focus:outline-none">
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <label for="email" class="flex  w-20 font-black font-light">Email : </label>
+                <input name="email" type="email" class="border rounded-lg p-3 mt-3 text-black w-full focus:outline-none">
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <label for="age" class="flex  w-20 font-black font-light">Age : </label>
+                <input name="age" type="number" class="border rounded-lg p-3 mt-3 text-black w-full focus:outline-none">
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <label for="favColor" class="flex  w-20 font-black font-light">Favorite Color : </label>
+                <input name="favColor" type="text" class="border rounded-lg p-3 mt-3 text-black w-full focus:outline-none">
+            </div>
+
+
+            <button class="bg-gray-500 text-white px-4 py-3 mt-4 rounded-lg font-light"  type="submit">Submit Data</button>
+        </form>
+    </div>        
+</body>
+</html>
