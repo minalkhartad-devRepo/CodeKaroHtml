@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Todo Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div class="border mt-32 w-[1000px] mx-auto text-center rounded-lg 
+        ring-2 ring-blue-500">
+
+        <div class="m-4 p-4">
+            <h1 class="text-lg text-blue-700">Edit Todo Task</h1>
+        </div>    
+
+        <div>
+            <form action="/updateTodo" method="post">
+                <div> 
+                    <input type="text" name="id" value="<%=todoData.id%>" hidden>
+                </div>
+                <div class="flex items-center justify-center gap-3">
+                    <<span class="font-semibold w-32 shrink-0 text-right">Title:</span>
+                    <input class="w-80 py-1 rounded-lg ring-2 ring-gray-100" type="text" name="title" value="<%= todoData.title %>" disabled>
+                </div>
+                <div class="flex items-center justify-center gap-3">
+                    <span class="font-semibold w-32 shrink-0 text-right">Task Action:</span>
+                    <input type="radio" name="isCompleted"  value = "true" 
+                    <%= todoData.isCompleted ? 'checked' : '' %> > Completed
+                    <input type="radio" name="isCompleted"  value = "false" 
+                    <%= !todoData.isCompleted ? 'checked' : '' %> > Not Completed
+                </div>
+                <button class = " w-20 py-1 my-4 border rounded-lg bg-blue-500 ring-2 ring-blue-500"  type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+
+</body>
+</html>
