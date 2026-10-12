@@ -1,0 +1,3 @@
+server data logged hereRequested url is /api/user by ip ::1 
+Requested url is /api/user by ip ::1 
+Requested url is /api/user/test by ip ::1 
